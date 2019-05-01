@@ -23,11 +23,11 @@ namespace CONSEC
 
             string s = Console.ReadLine();
 
-            Debug.Assert(s.Length >= 1 && s.Length <= 200000);
+            Debug.Assert(s.Length >= 1 && s.Length <= 200000); //warunek logiczny aby dalsza częśćsię wykonała
 
             int Q = int.Parse(Console.ReadLine());
 
-            Debug.Assert(Q >= 1 && Q <= 100000);
+            Debug.Assert(Q >= 1 && Q <= 100000);                //warunek logiczny aby dalsza częśćsię wykonała
 
             for (int i = 1; i <= Q; i++)
             {
@@ -64,7 +64,7 @@ namespace CONSEC
             if (queryType == 2)
             {
 
-                //samien litere na #
+                //zamien litere na #
                 sb[i] = '#';   //string jest immutable wiec powinnismy to zrobić jako string builder
             }
             else if (queryType == 1)
